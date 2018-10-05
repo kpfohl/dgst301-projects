@@ -16,14 +16,14 @@ def get_words(pos):
     elif (pos is "verbs"):
         all_words = [w["present"] for w in pycorpora.words.verbs["verbs"]]
 
-#counting and finding the right number of syllable choice. Which is a two count for this function
+#counting and finding the right number of syllable choice. Which is a one count for this function
 
     keepers = []
     for n in all_words:
         pl = pronouncing.phones_for_word(n)
         if (len(pl) > 0):      
             sc = pronouncing.syllable_count(pl[0])
-            if (sc == 2):
+            if (sc == 1):
                 keepers.append(n)
             
     return keepers

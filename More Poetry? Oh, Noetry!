@@ -1,0 +1,71 @@
+#Using tools such as prounouncing, textblob, pycorpora, and random to generate a free verse peom text 
+
+import pronouncing
+from textblob import TextBlob
+import pycorpora
+import random
+
+#Using a function to get a list of words that have 2 syllablies   
+
+def get_words(pos):
+
+#pulling nouns and verbs into a list to choose at random from    
+   
+    if (pos is "nouns"):
+        all_words = pycorpora.words.nouns["nouns"]
+    elif (pos is "verbs"):
+        all_words = [w["present"] for w in pycorpora.words.verbs["verbs"]]
+
+#counting and finding the right number of syllable choice. Which is a two count for this function
+
+    keepers = []
+    for n in all_words:
+        pl = pronouncing.phones_for_word(n)
+        if (len(pl) > 0):      
+            sc = pronouncing.syllable_count(pl[0])
+            if (sc == 2):
+                keepers.append(n)
+            
+    return keepers
+
+#Finding rhyming pairs that somewhat closey match, and returning them to the function 
+
+def get_pairs():
+    
+    verbs = get_words("verbs")
+    nouns = get_words("nouns")
+
+    pairs = []
+    
+    for n in nouns:
+        for v in verbs:
+            #print("comparing " + f,p)
+            if (v in pronouncing.rhymes(n)):
+                pairs.append( (v,n) )
+                
+    
+    return pairs
+
+#Finding words that have definate articles, and returning them to the function
+
+def an(word):
+    if (word[0] in ["a","e","i","o","u"]):
+        return "an " + word
+    else:
+        return "a " + word
+    
+#Using the template to print a poem from the above functions      
+
+template = """
+    He says he paints pictures on my {0},
+    but he is only {1}.
+"""
+
+pair = random.choice(get_pairs())
+
+poem = template.format(
+    pair[0],
+    an(pair[1])
+)
+
+print(poem)

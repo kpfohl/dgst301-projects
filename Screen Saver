@@ -1,0 +1,54 @@
+var xspacing = 10;    
+// horizontal length
+var w;                
+// Width of wave
+var theta = 0.0;      
+// Starting angle
+var amplitude = 200.0; 
+// wave height
+var period = 400.0;   
+// number of pixels
+var dx;               
+// Value for x
+var yvalues;  
+// array tom store value
+
+//canvas size
+function setup() {
+  createCanvas(1920, 1080);
+  w = width+16;
+  dx = (TWO_PI / period) * xspacing;
+  yvalues = new Array(floor(w/xspacing));
+}
+
+//canvas color background
+function draw() {
+  background(80);
+  calcWave();
+  renderWave();
+}
+
+function calcWave() {
+  // puting theta with the angle to produce a wave
+  //speed of the wave
+  theta += 0.01;
+  
+
+  // x and y value make the sine wave
+  var x = theta;
+  for (var i = 0; i < yvalues.length; i++) {
+    yvalues[i] = sin(x)*amplitude;
+    x+=dx;
+  }
+}
+
+//fill color of wave balls 
+function renderWave() {
+  noStroke();
+  fill(25);
+  
+  // Drawing a elipse at each location
+  for (var x = 0; x < yvalues.length; x++) {
+    ellipse(x*xspacing, height/2+yvalues[x], 12, 12);
+  }
+}

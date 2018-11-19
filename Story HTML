@@ -1,0 +1,63 @@
+CTYPE html>
+<html lang="en-us">
+<head>
+<!-- Your Grammar Goes in the <script> tag below: -->
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+	<title>
+		Life Goals
+	</title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+
+	<style>
+	.meta {margin-top: 2em;} body {font-family: "Crimson Text", "Times New Roman", Georgia, serif;font-size:20pt;} hr { border-color:#444;} </style>
+</head>
+<body>
+	<div class="container meta">
+		<div class="row">
+			<h1 class="col-lg-10 offset-lg-1">
+				You Only Live Once
+			</h1>
+		</div>
+		<div class="row">
+			<p class="col-lg-10 offset-lg-1">
+				Take life by the horns, and follow the path to sucess! 
+			</p>
+		</div>
+		<div class="row">
+			<p class="col-lg-10 offset-lg-1">
+				<strong>Current Word Count:</strong> <span id="wordCount">0</span>
+			</p>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+
+			<form class="col-lg-10 offset-lg-1">
+			<button type="button" class="btn btn-large btn-success" value="Create a New Story" id="newStory">Create a New Story</button>
+			<input type="hidden" id="numberOfStories" value="1" />
+			</form>
+
+		</div>
+		<div class="row">
+			<div class="col-lg-12"><hr/></div>
+		</div>
+		<div class="row">
+			<div id="story" class="tracery col-lg-10 offset-lg-1" ></div>
+		</div>
+
+	</div>
+	
+	</div>
+  
+	<script src="https://cdn.rawgit.com/oncomouse/oncomouse.github.io/9b1cb417/javascripts/tracery/tracery.min.js"></script>
+	
+	<script src="controls.js"></script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

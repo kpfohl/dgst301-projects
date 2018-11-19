@@ -1,0 +1,34 @@
+  {"origin": ["#chapter# #chapter# #chapter# #chapter# #chapter# #chapter# #chapter# #chapter# #chapter# #chapter# #chapter# #chapter# #chapter# #chapter# #chapter# #chapter#  #chapter# #chapter# #chapter# #chapter# #chapter# #chapter# #chapter# #chapter# #chapter# #chapter# #chapter# #chapter# #chapter# #chapter# #chapter# #chapter# #chapter# #chapter#  #chapter# #chapter# #chapter# "],
+	"chapter" : ["<h2>#title#</h2> #paragraph# #paragraph# #paragraph# #paragraph# #paragraph# #paragraph# #paragraph# #paragraph# #paragraph# #paragraph# #paragraph# #paragraph# #paragraph# #paragraph# #paragraph# #paragraph# #paragraph# #paragraph# #paragraph# #paragraph# #paragraph# #paragraph# #paragraph# #paragraph# #paragraph# #paragraph# #paragraph# #paragraph# #paragraph# #paragraph# #paragraph# #paragraph#"],
+	"paragraph" : [
+		"<p>#sentence# #sentence# #sentence# #sentence# #sentence# #sentence# #sentence# #sentence# #sentence# #sentence# #sentence# #sentence#</p>",
+		"<p>#sentence# #sentence# #sentence# #sentence# #sentence# #sentence# #sentence# #sentence# #sentence# #sentence# #sentence# #sentence#</p>",
+		"<p>#sentence# #sentence# #sentence# #sentence# #sentence# #sentence# #sentence# #sentence# #sentence# #sentence# #sentence# #sentence#</p>",
+		"<p>#sentence# #sentence# #sentence# #sentence# #sentence# #sentence# #sentence# #sentence# #sentence# #sentence# #sentence# #sentence#</p>",
+		"<p>#sentence# #sentence# #sentence# #sentence# #sentence# #sentence# #sentence# #sentence# #sentence# #sentence# #sentence# #sentence#</p>"],
+
+	"sentence": [
+			"Only I can change my #life#. No one can do it for me. ",
+			"Life is #percent# what happens to you and the remaining is how you relate to it. ",
+			"It is better to #fail# in originality than to succeed in imitation. ",
+			"If you stop, you fight. ",
+			"If you want #desires# things to happen to you, roll up your sleeves and get to work. ",
+			"Find a way around each #path# in the path to your dream, because what you want is worth it! ",
+			"There is no age limit on #fantasy#. Sometimes it’s not until later in life that some people find a new purpose. ",
+			"You’re still writing your #vision#, so don’t judge it as a finished work of art yet. ",
+			"Many people #make# a failure as the end of the road to success. ",
+			"Not all #storms# come to disrupt your life. Some come to clear your path. "
+			],
+	"title" : ["#percent# #storms.capitalize#"],
+	"life" : ["habits","life","activities","goals","weight","relationships","goals","failures","heart"],
+	"percent" : ["20%","10%","40%","30%","70%","60%","50%","80%","90%"],
+	"fail": ["fail","fight","break","stop","place yourself","understand","use faith","believe","open up"],
+	"desires": ["good","satisfying","uplifting","powerful","ever lasting","to control","becoming"],
+	"path": ["strength","freedom","disruption","fantasy","section","given opportunities","achievemnt","talent","powerful momment"],
+	"fantasy": ["goals","defeat","dreaming","life","will power","farting","arming yourself","disruption","leadership"],
+	"make": ["set","close","fight","succeed","marginalize","set fourth","write off","example of themeselves","guide"],
+	"vision": ["goals","opportunities","rights","striking zones","arangements","career","sins","taxes","story"],
+	"storms": ["Bad Days","fears","struggles","lifeless","limitless","free","freedom","obvious","mind-blowing"]
+	
+
+}

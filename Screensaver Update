@@ -1,0 +1,16 @@
+function setup() {
+  createCanvas(1920, 1080, WEBGL);
+}
+
+// Drawing cylinder with radius of 200 and Height 600
+// Moving at a frame count of .02
+// Cylinder color set to lime green 
+
+function draw() {
+  background('red');
+  rotateX(frameCount * 0.02);
+  rotateZ(frameCount * 0.02);
+  cylinder(200, 600);
+  fill('rgb(0,255,0)');
+  rect(20, 20, 60, 60);
+}

@@ -6,6 +6,11 @@
 		"<p>#sentence# #sentence# #sentence# #sentence# #sentence# #sentence# #sentence# #sentence# #sentence# #sentence# #sentence# #sentence#</p>",
 		"<p>#sentence# #sentence# #sentence# #sentence# #sentence# #sentence# #sentence# #sentence# #sentence# #sentence# #sentence# #sentence#</p>"],
 
+	//incorporating origin as the structure benhind the story set up
+	//settting the chapter structure, paragraph layout, and sentence quantity 
+	//sentece as the backbone to the story 
+	//filler words that change throughout the story 
+	
 	"sentence": [
 			"Only I can change my #life#. No one can do it for me. ",
 			"Life is #percent# what happens to you and the remaining is how you relate to it. ",
